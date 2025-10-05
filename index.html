@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Air Filtration Monitoring System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7f8;
+            color: #333;
+        }
+        header {
+            background-color: #003d33;
+            color: white;
+            padding: 25px 0 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,.15);
+        }
+        nav {
+            margin-top: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 22px 45px 22px;
+        }
+        h1, h2 {
+            margin-bottom: 14px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 22px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,.09);
+        }
+        .sensor-card {
+            background: #e3f2fd;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin-bottom: 14px;
+        }
+        .sensor-title {
+            font-size: 1.23em;
+            color: #283593;
+            margin-bottom: 9px;
+        }
+        .data-value {
+            font-size: 1.15em;
+            color: #00796b;
+            margin-bottom: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            background: #003d33;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #00796b;
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        .dashboard {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .sensor-card {
+            flex: 1 0 320px;
+            min-width: 260px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Air Filtration Monitoring System</h1>
+        <p>CO & CO₂ IoT Sensors • Cloud Dashboard • Optimized Buffers</p>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#features">Features</a>
+            <a href="#sensors">Sensors</a>
+            <a href="#howitworks">Operation</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>
+                Our smart monitoring system uses CO and CO₂ sensors with IoT connectivity. Real-time sensor data is transmitted and visualized on robust cloud dashboards, facilitated by optimized memory buffers for efficient, reliable monitoring of indoor environments.
+            </p>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>CO (Carbon Monoxide) and CO₂ (Carbon Dioxide) sensor integration</li>
+                <li>Cloud-connected, real-time dashboard</li>
+                <li>Live air quality data and historical trends</li>
+                <li>Optimized memory buffers for minimal latency</li>
+                <li>Automated alerts for abnormal gas levels</li>
+                <li>Advanced analytics for proactive health & safety</li>
+                <li>Mobile access via secure cloud dashboard</li>
+            </ul>
+        </section>
+        <section id="sensors">
+            <h2>Monitored Sensors</h2>
+            <div class="dashboard">
+                <div class="sensor-card">
+                    <div class="sensor-title">CO Sensor (Carbon Monoxide)</div>
+                    <div class="data-value">Current Value: <b>-- ppm</b></div>
+                    <div>Normal Range: 0 – 9 ppm</div>
+                    <div>Status: <b>Safe</b></div>
+                </div>
+                <div class="sensor-card">
+                    <div class="sensor-title">CO₂ Sensor (Carbon Dioxide)</div>
+                    <div class="data-value">Current Value: <b>-- ppm</b></div>
+                    <div>Normal Range: 400 – 1000 ppm</div>
+                    <div>Status: <b>Safe</b></div>
+                </div>
+            </div>
+            <small>* Live sensor values update automatically when connected to IoT devices.</small>
+        </section>
+        <section id="howitworks">
+            <h2>How It Works</h2>
+            <p>
+                IoT sensors for CO and CO₂ continuously monitor air content and send data buffers directly to the cloud platform. The system’s optimized memory management ensures rapid, lossless transmission. Users access the dashboard to view current levels, alerts, and trends, taking action automatically if unsafe conditions are detected.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                We design solutions for smarter indoor safety. Our team combines expertise from sensor engineering, cloud systems, and IoT to deliver accessible air quality intelligence for homes and industries worldwide.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="sensor">Which sensor are you interested in?</label>
+                <select name="sensor" id="sensor">
+                    <option value="co">CO (Carbon Monoxide)</option>
+                    <option value="co2">CO₂ (Carbon Dioxide)</option>
+                    <option value="both">Both</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Smart Air Filtration Monitoring System. All rights reserved.
+    </footer>
+</body>
+</html>
